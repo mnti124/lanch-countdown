@@ -82,8 +82,12 @@ span.date__number{
     z-index: 100;
     color: hsl(345, 95%, 68%);
     background: transparent;
+    transition: all .4s ease-in;
 }
 
+span.date__number:hover{
+    transform: scale(1.1);
+}
 
 hr.line{
     background-color: transparent;
