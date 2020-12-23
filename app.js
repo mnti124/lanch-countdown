@@ -11,7 +11,6 @@ let s = currentDate.getSeconds();
 let m = currentDate.getMinutes();
 let h = currentDate.getHours();
 let d = currentDate.getDate();
-let time;
 
 function countDown(){
     setInterval(function(){

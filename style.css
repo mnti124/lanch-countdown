@@ -38,9 +38,12 @@
 .countdown__wrapper__time{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 50%;
+    flex-wrap: wrap;
     padding: 1.2rem;
+}
+
+.countdown__time__container{
+    margin: 1rem;
 }
 
 .countdown__time__day{
@@ -48,7 +51,8 @@
     width: 175px;
     height: 198px;
     border-radius: 9px;
-    margin-right: 2rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
 .countdown__day__top{
@@ -80,6 +84,7 @@ span.date__number{
     background: transparent;
 }
 
+
 hr.line{
     background-color: transparent;
     padding: .3rem;
@@ -96,14 +101,10 @@ hr.line{
     transform: scale(1);
 }
 
-.date__value__days,
-.date__value__hours,
-.date__value__minutes,
-.date__value__seconds{
-    position: absolute;
-    bottom: 50px;
-    
+h3{
+    text-align: center;
 }
+
 
 .date__value__days{
     left: 31.6%;
@@ -167,3 +168,8 @@ i.fa-instagram:hover
     background: transparent;
 }
 
+@media screen and (max-width: 769px){
+    .countdown__wrapper__time{
+        width: 442px;
+    }
+}
